@@ -1,0 +1,32 @@
+# Angel AI — Python dependencies
+# Install with: pip install -r requirements.txt
+
+# ── Core data ─────────────────────────────────────────────────────────────────
+numpy>=1.26
+pandas>=2.0
+
+# ── Machine learning (local training) ────────────────────────────────────────
+torch>=2.2                         # PyTorch — CPU/GPU local training
+tensorflow>=2.16                   # TensorFlow — CPU/GPU local training
+scikit-learn>=1.4                  # sklearn — classical ML
+xgboost>=2.0                       # Gradient boosting
+lightgbm>=4.3                      # Fast gradient boosting
+catboost>=1.2                      # Gradient boosting (categorical-friendly)
+
+# ── Google Cloud — BigQuery ML ────────────────────────────────────────────────
+google-cloud-bigquery>=3.20        # BigQuery client + CREATE MODEL API
+google-cloud-bigquery-storage>=2.25 # Fast data reads from BigQuery
+db-dtypes>=1.2                     # Pandas/Arrow type support for BigQuery
+
+# ── Google Cloud — Vertex AI & AutoML ────────────────────────────────────────
+google-cloud-aiplatform>=1.50      # Vertex AI SDK (AutoML, custom training, pipelines)
+google-cloud-storage>=2.16         # GCS bucket access (upload datasets for Vertex AI)
+
+# ── Report generation ─────────────────────────────────────────────────────────
+reportlab>=4.1                     # PDF report generation
+matplotlib>=3.8                    # Charts and graphs
+
+# ── Utilities ─────────────────────────────────────────────────────────────────
+python-dotenv>=1.0                 # Load .env files
+requests>=2.31                     # HTTP requests
+psutil>=5.9                        # System resource info (used by tools/system.py)

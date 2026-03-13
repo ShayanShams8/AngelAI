@@ -1,0 +1,45 @@
+# System Information — Angel AI
+# Generated       : 2026-03-12T21:02:25
+# RECOMMENDATION  : LOCAL
+# Reason          : 8.3 GB RAM available with ML libraries present
+
+## OS & Python
+OS      : Linux 6.18.8-200.fc43.x86_64 (#1 SMP PREEMPT_DYNAMIC Fri Jan 30 20:23:28 UTC 2026)
+Python  : 3.13.11 (main, Nov 10 2011, 15:00:00) [GCC 15.2.0]
+
+## CPU
+Model           : Intel(R) Core(TM) i3-10110U CPU @ 2.10GHz
+Architecture    : x86_64
+Physical cores  : 2
+Logical cores   : 4
+
+## RAM
+total_gb            : 12.36
+available_gb        : 8.28
+used_gb             : 4.08
+percent_used        : 33.0
+
+## GPU(s)
+GPU 0: {"vendor": "none", "note": "No GPU detected or driver tools unavailable"}
+
+## Disk (/)
+total_gb            : 6.18
+free_gb             : 6.18
+used_gb             : 0.0
+
+## ML Libraries
+torch                              : not installed
+tensorflow                         : not installed
+sklearn                            : 1.8.0
+xgboost                            : 3.2.0
+lightgbm                           : not installed
+catboost                           : not installed
+pandas                             : 2.3.3
+numpy                              : 2.4.3
+google.cloud.bigquery              : 3.40.1
+google.cloud.aiplatform            : not installed
+
+## Platform Recommendation
+Recommendation  : LOCAL
+Reason          : 8.3 GB RAM available with ML libraries present
+Note            : Train and run locally. Save model artifact to tools/models/.

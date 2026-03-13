@@ -1,0 +1,20 @@
+# Angel AI — Saved Models
+# Format: name | type | path | trained_on | accuracy | description
+
+iowa_liquor_rf_model | RandomForestClassifier | tools/models/iowa_liquor_rf_model.pkl | Iowa Data Portal (105k transactions, 2024-2025) | CV acc: 88.6% | Predicts whether a new liquor store in Iowa will exceed its zip-code median annual sales volume. Features: zip market size, store count, avg store volume, price/liter, market share, transaction density. Trained 2026-03-12.
+
+## angel_ai_success_xgb.pkl
+- **Task**: Binary classification — open-source analytics tool success
+- **Algorithm**: XGBoost Classifier
+- **Features**: market_size, competitive_density, differentiation, barrier_to_entry, open_source, free, integrations, segment_fit, community, tech_depth
+- **Accuracy**: 1.00  |  ROC-AUC: 1.00
+- **Trained**: 2026-03-12
+- **Training platform**: Local
+
+## angel_ai_success_xgb.pkl
+- **Task**: Binary classification — open-source analytics tool success
+- **Algorithm**: XGBoost Classifier
+- **Features**: market_size, competitive_density, differentiation, barrier_to_entry, open_source, free, integrations, segment_fit, community, tech_depth
+- **Accuracy**: 1.00  |  ROC-AUC: 1.00
+- **Trained**: 2026-03-12
+- **Training platform**: Local

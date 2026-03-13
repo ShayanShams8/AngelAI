@@ -1,0 +1,212 @@
+# API documentation URLs for 14 major SaaS platforms
+
+Every service below has been verified as of early 2026. Where a single landing page exists, it is listed first. Services with multiple distinct APIs include all key entry points with short descriptions.
+
+---
+
+## Payments and billing platforms
+
+### 1. Stripe
+
+| Link | Description |
+|------|-------------|
+| **https://docs.stripe.com/api** | **Primary API reference** — full REST API endpoint documentation |
+| https://docs.stripe.com/ | General documentation hub (guides, quickstarts, integration walkthroughs) |
+| https://docs.stripe.com/apis | API overview explaining v1 and v2 namespaces, authentication, and rate limits |
+
+Stripe's API is a single unified REST API. The `/api` page is the canonical developer reference.
+
+---
+
+### 2. Square
+
+| Link | Description |
+|------|-------------|
+| **https://developer.squareup.com/reference/square** | **Primary API reference** — all REST endpoint details (20+ APIs, 100+ endpoints) |
+| https://developer.squareup.com/docs | Developer guides organized by domain (Payments, Commerce, Customers, etc.) |
+| https://developer.squareup.com/explorer/square | Interactive API Explorer for testing calls |
+
+---
+
+### 3. PayPal
+
+PayPal has no single unified API docs page; its ecosystem spans multiple products.
+
+| Link | Description |
+|------|-------------|
+| **https://developer.paypal.com/api/rest/** | **REST APIs landing page** — authentication, sandbox setup, and links to all REST resources |
+| https://developer.paypal.com/docs/api/payments/v2/ | Payments API v2 reference |
+| https://developer.paypal.com/docs/api/orders/v2/ | Orders API v2 reference |
+| https://developer.paypal.com/braintree/docs/reference/overview | Braintree API reference (PayPal-owned, separate card processing API) |
+
+---
+
+### 4. Paddle
+
+| Link | Description |
+|------|-------------|
+| **https://developer.paddle.com/api-reference/overview** | **Primary API reference** — Paddle Billing REST API |
+| https://developer.paddle.com/ | Developer home (platform overview, SDKs, changelog) |
+| https://developer.paddle.com/webhooks/overview | Webhooks documentation |
+
+Paddle uses a single unified REST API (base URL: `https://api.paddle.com`).
+
+---
+
+### 5. Chargebee
+
+| Link | Description |
+|------|-------------|
+| **https://apidocs.chargebee.com/docs/api** | **Primary API reference** — full REST API with sidebar navigation to all resources |
+| https://api-explorer.chargebee.com | Interactive API Explorer |
+
+Chargebee has one REST API. Docs support code samples in PHP, Ruby, Python, Java, .NET, Node, and Go.
+
+---
+
+## CRM platforms
+
+### 6. HubSpot
+
+| Link | Description |
+|------|-------------|
+| **https://developers.hubspot.com/docs/api-reference/overview** | **Primary API reference** — endpoint documentation for CRM, Marketing, Conversations, Automation, and more |
+| https://developers.hubspot.com/docs | Developer documentation hub (getting started, guides, CLI) |
+| https://developers.hubspot.com/ | Top-level developer portal |
+
+HubSpot uses a single unified REST API across all product lines.
+
+---
+
+### 7. Salesforce
+
+Salesforce has the most sprawling API ecosystem of any service listed. The API library page is the single best starting point.
+
+| Link | Description |
+|------|-------------|
+| **https://developer.salesforce.com/docs/apis** | **API Library** — master index of every Salesforce API with links to guides and references |
+| https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_rest.htm | REST API Developer Guide |
+| https://developer.salesforce.com/docs/atlas.en-us.api.meta/api | SOAP API Developer Guide |
+| https://developer.salesforce.com/docs/platform/graphql/overview | GraphQL API |
+| https://developer.salesforce.com/developer-centers/integration-apis | APIs & Integration Developer Center |
+
+Key APIs include REST, SOAP, Bulk, GraphQL, Metadata, Tooling, Streaming/Pub-Sub, Commerce, and Marketing Cloud APIs.
+
+---
+
+### 8. Pipedrive
+
+| Link | Description |
+|------|-------------|
+| **https://developers.pipedrive.com/docs/api/v1** | **Primary API reference** — all REST v1 endpoints with interactive docs |
+| https://pipedrive.readme.io/docs | Developer guides, tutorials, OAuth setup, and core concepts |
+| https://pipedrive.readme.io/docs/pipedrive-api-v2 | API v2 overview (newer version gradually replacing v1) |
+
+Pipedrive maintains both v1 (stable) and v2 (rolling out) APIs. OpenAPI 3 specs are available for both.
+
+---
+
+### 9. Zoho CRM
+
+| Link | Description |
+|------|-------------|
+| **https://www.zoho.com/crm/developer/docs/** | **Developer resources landing page** — links to all APIs, SDKs, and tools |
+| https://www.zoho.com/crm/developer/docs/api/v8/ | REST API v8 (current version) |
+| https://www.zoho.com/crm/developer/docs/api/graphql/graphql-overview.html | GraphQL API |
+| https://www.zoho.com/crm/developer/docs/api/v8/COQL-Overview.html | Query API (COQL — CRM Object Query Language) |
+
+Zoho CRM offers REST, GraphQL, Bulk, Notification, and COQL query APIs, plus SDKs in **seven languages**.
+
+---
+
+## Accounting and ERP platforms
+
+### 10. QuickBooks Online
+
+| Link | Description |
+|------|-------------|
+| **https://developer.intuit.com/app/developer/qbo/docs/get-started** | **Primary landing page** — Get Started with the QBO API |
+| https://developer.intuit.com/app/developer/qbo/docs/api/accounting/most-commonly-used/account | API reference (Accounting API endpoints) |
+| https://developer.intuit.com/app/developer/qbo/docs/develop | Development guides |
+
+The QBO API is a REST/JSON API using OAuth 2.0, hosted under the broader Intuit Developer portal.
+
+---
+
+### 11. Xero
+
+Xero splits its documentation across multiple distinct APIs.
+
+| Link | Description |
+|------|-------------|
+| **https://developer.xero.com/documentation/getting-started-guide/** | **Primary documentation landing page** |
+| https://developer.xero.com/documentation/api/accounting/overview | Accounting API overview |
+| https://developer.xero.com/documentation/api/payrollau/overview | Payroll API (Australia) |
+| https://developer.xero.com/documentation/api/payrolluk/overview | Payroll API (UK) |
+| https://developer.xero.com/documentation/api/projects/overview | Projects API |
+| https://developer.xero.com/ | Developer portal home |
+
+Xero maintains **nine separate APIs**: Accounting, Payroll (AU/UK/NZ), Files, Assets, Projects, Bank Feeds, Finance, and eInvoicing.
+
+---
+
+### 12. FreshBooks
+
+| Link | Description |
+|------|-------------|
+| **https://www.freshbooks.com/api/start** | **Primary API documentation landing page** |
+| https://www.freshbooks.com/api/authentication | OAuth 2.0 authentication guide |
+
+FreshBooks uses a single REST API with OAuth 2.0. All docs live under `freshbooks.com/api/`.
+
+---
+
+### 13. NetSuite (Oracle)
+
+NetSuite has the most complex documentation structure among these services, nested within Oracle's docs.
+
+| Link | Description |
+|------|-------------|
+| **https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/preface_1531238762.html** | **Developer documentation landing page** — hub linking to all NetSuite APIs |
+| https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_157373386674.html | REST API Browser (interactive explorer) |
+| https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/chapter_N3412777.html | SuiteTalk SOAP Web Services overview |
+| https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_158151234003.html | API reference (SuiteScript 2.x, Commerce API) |
+
+NetSuite's API surface includes **SuiteTalk REST**, **SuiteTalk SOAP**, **SuiteScript** (server-side JS), **RESTlets** (custom REST endpoints), and **SuiteQL** (SQL-like queries).
+
+---
+
+### 14. Shopify
+
+| Link | Description |
+|------|-------------|
+| **https://shopify.dev/docs/api** | **Central API landing page** — master index of all Shopify APIs and tools |
+| https://shopify.dev/docs/api/admin-graphql/latest | GraphQL Admin API (primary, recommended API) |
+| https://shopify.dev/docs/api/admin-rest | REST Admin API (legacy as of late 2024) |
+| https://shopify.dev/docs/api/storefront/latest | Storefront API (for headless/custom storefronts) |
+| https://shopify.dev/docs/api/customer | Customer Account API |
+| https://shopify.dev/docs/api/hydrogen | Hydrogen framework |
+
+Shopify has **fully transitioned to GraphQL** as its primary API. New public apps must use GraphQL as of April 2025. Docs are versioned quarterly; the latest version is 2026-01.
+
+---
+
+## Quick-reference summary table
+
+| # | Service | Main API Docs URL |
+|---|---------|-------------------|
+| 1 | Stripe | https://docs.stripe.com/api |
+| 2 | Square | https://developer.squareup.com/reference/square |
+| 3 | PayPal | https://developer.paypal.com/api/rest/ |
+| 4 | Paddle | https://developer.paddle.com/api-reference/overview |
+| 5 | Chargebee | https://apidocs.chargebee.com/docs/api |
+| 6 | HubSpot | https://developers.hubspot.com/docs/api-reference/overview |
+| 7 | Salesforce | https://developer.salesforce.com/docs/apis |
+| 8 | Pipedrive | https://developers.pipedrive.com/docs/api/v1 |
+| 9 | Zoho CRM | https://www.zoho.com/crm/developer/docs/ |
+| 10 | QuickBooks Online | https://developer.intuit.com/app/developer/qbo/docs/get-started |
+| 11 | Xero | https://developer.xero.com/documentation/getting-started-guide/ |
+| 12 | FreshBooks | https://www.freshbooks.com/api/start |
+| 13 | NetSuite | https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/preface_1531238762.html |
+| 14 | Shopify | https://shopify.dev/docs/api |
+
