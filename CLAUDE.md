@@ -89,7 +89,7 @@ This loop is how the framework improves over time.
 ## File Structure
 
 **What goes where:**
-- **Deliverables**: Final outputs go to cloud services (Google Sheets, Slides, etc.) where I can access them directly
+- **Deliverables**: Final outputs (PDF reports, charts) are saved to `RESULTS/` where the user can access them directly
 - **Intermediates**: Temporary processing files that can be regenerated
 
 **Directory layout:**
@@ -163,7 +163,7 @@ credentials.json, token.json  # Google OAuth (gitignored)
 - When asking the user whether they would like to connect to their business platform, do not label "General" as recommended.
 
 
-**Core principle:** Local files are just for processing. Anything I need to see or use lives in cloud services. Everything in `.tmp/` is disposable.
+**Core principle:** All final reports and deliverables are saved locally to `RESULTS/`. Everything in `.tmp/` is disposable.
 
 
 ## Bottom Line

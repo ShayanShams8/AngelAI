@@ -1,0 +1,6 @@
+.local/
+.env
+RESULTS/
+__pycache__/
+*.pyc
+.vscode/
