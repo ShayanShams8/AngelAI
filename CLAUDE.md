@@ -46,7 +46,7 @@ If `pip` is unavailable, tell the user Python may not be properly installed (see
 Immediately after installing dependencies, check that all required directories and core files exist. Create any that are missing — do not ask the user to do this:
 ```
 RESULTS/                  # create if missing
-.tmp/                     # create if missing
+tmp/                     # create if missing
 tools/                    # create if missing
 tools/models/             # create if missing
 tools/models/models.txt   # create as empty file if missing
@@ -56,11 +56,12 @@ system_info.txt           # create as empty file if missing
 ```
 Do not overwrite any file that already exists. Only create what is absent.
 
-**0c. Clean up `.tmp/` after each operation**
-After completing any task, delete files from `.tmp/` that were created during that operation and are no longer needed (e.g. raw API responses, intermediate CSVs, partial exports). Apply these rules:
+**0c. Clean up `tmp/` after each operation**
+After completing any task, delete files from `.
+tmp/` that were created during that operation and are no longer needed (e.g. raw API responses, intermediate CSVs, partial exports). Apply these rules:
 - Delete: files generated during the just-completed task that served only as stepping stones to the final output.
 - Keep: files that are inputs or dependencies for a known follow-up step in the current workflow.
-- Never touch `RESULTS/` during cleanup — only `.tmp/`.
+- Never touch `RESULTS/` during cleanup — only `tmp/`.
 - If unsure whether a file is still needed, keep it.
 
 **1. Look for existing tools first**
@@ -96,7 +97,7 @@ This loop is how the framework improves over time.
 **Directory layout:**
 ```
 RESULTS/        # Final PDF reports delivered to the user. Never delete these.
-.tmp/           # Temporary files (scraped data, intermediate exports). Regenerated as needed.
+tmp/           # Temporary files (scraped data, intermediate exports). Regenerated as needed.
 system_info.txt # saves the devices system capabilities(e.g. GPU, CPU).
 tools/system.py # Runs a python script to retrieve the system information and save it in `system_info.txt`.
 tools/          # Python scripts for deterministic execution
@@ -151,7 +152,7 @@ Any request that involves evaluation, forecasting, prediction, scoring, assessme
        - If the task is too complex for BigQuery ML (deep learning, large unstructured data, custom architectures) → **use Vertex AI AutoML**.
     4. Training data may come from BigQuery public datasets, Kaggle, the Iowa Data Portal, or any other accessible public source — the training platform decision does not restrict data sources.
 - At the end, ask the user whether they would like to save the model. If the model was trained locally, save it to `tools/models/` and log it in `tools/models/models.txt`. If trained in the cloud, save it in their Google Cloud Console and log it in `tools/models/models.txt`.
-- Create the result with graphs (if applicable) in a PDF file and save it to the `RESULTS/` folder. Temporary or intermediate files (raw data exports, partial outputs, scratch files) go to `.tmp/` as always. Never save final PDFs to `.tmp/`.
+- Create the result with graphs (if applicable) in a PDF file and save it to the `RESULTS/` folder. Temporary or intermediate files (raw data exports, partial outputs, scratch files) go to `tmp/` as always. Never save final PDFs to `tmp/`.
 - **Every report PDF must include a metadata table as the first section**, formatted as follows:
 
 | Field | Value |
@@ -185,7 +186,7 @@ Any request that involves evaluation, forecasting, prediction, scoring, assessme
 - When asking the user whether they would like to connect to their business platform, do not label "General" as recommended.
 
 
-**Core principle:** All final reports and deliverables are saved locally to `RESULTS/` as a pdf file. Everything in `.tmp/` is disposable.
+**Core principle:** All final reports and deliverables are saved locally to `RESULTS/` as a pdf file. Everything in `tmp/` is disposable.
 
 
 ## Bottom Line
