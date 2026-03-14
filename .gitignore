@@ -1,6 +1,6 @@
 .local/
 .env
-RESULTS/
+!.tmp/
 __pycache__/
 *.pyc
 .vscode/
