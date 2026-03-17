@@ -1,0 +1,9 @@
+{
+  "name": "angel-ai",
+  "version": "0.1.0",
+  "description": "Workflow-driven data analysis and reporting plugin for Claude Code using the WAT framework",
+  "author": {
+    "name": "Shayan Shams"
+  },
+  "license": "MIT"
+}
