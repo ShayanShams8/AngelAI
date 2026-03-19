@@ -5,20 +5,29 @@ WAT Framework — Tool Layer
 
 Collects CPU, RAM, GPU, disk, and Python/ML library information relevant to
 deciding whether a machine learning model can be trained and run locally.
-Writes a structured report to system_info.txt in the project root.
+Writes a structured report to system_info.txt.
 
 Usage:
     python3 tools/system.py
+    python3 tools/system.py --project-root /path/to/user/project
 """
 
 import os
 import sys
+import argparse
 import platform
 import subprocess
 import json
 from pathlib import Path
 
-OUTPUT_PATH = Path(__file__).parent.parent / "system_info.txt"
+
+def resolve_output_path(project_root: str | None) -> Path:
+    if project_root:
+        root = Path(project_root)
+    else:
+        root = Path.cwd()
+    root.mkdir(parents=True, exist_ok=True)
+    return root / "system_info.txt"
 
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
@@ -262,7 +271,7 @@ def collect() -> dict:
     }
 
 
-def write_report(info: dict):
+def write_report(info: dict, output_path: Path):
     rec  = info["platform_recommendation"]
     ram  = info["ram"]
     cpu  = info["cpu"]
@@ -310,13 +319,23 @@ def write_report(info: dict):
         "",
     ]
 
-    OUTPUT_PATH.write_text("\n".join(lines))
-    print(f"Report written to: {OUTPUT_PATH}")
+    output_path.write_text("\n".join(lines))
+    print(f"Report written to: {output_path}")
 
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Angel AI System Inspector")
+    parser.add_argument(
+        "--project-root",
+        metavar="PATH",
+        help="Write system_info.txt to this directory instead of cwd",
+        default=None,
+    )
+    args = parser.parse_args()
+
+    output_path = resolve_output_path(args.project_root)
     info = collect()
-    write_report(info)
+    write_report(info, output_path)
     rec = info["platform_recommendation"]
     print(f"\nRecommendation : {rec['recommendation'].upper()}")
     print(f"Reason         : {rec['reason']}")

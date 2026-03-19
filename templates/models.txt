@@ -1,0 +1,3 @@
+# Angel AI — Model Registry
+# Format: name | description | location | date
+# Example: iowa_liquor_rf | Random Forest for Iowa liquor demand | tools/models/iowa_liquor_rf.pkl | 2026-03-16

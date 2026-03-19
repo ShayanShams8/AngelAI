@@ -1,0 +1,8 @@
+{
+  "name": "angel-ai",
+  "version": "0.1.0",
+  "description": "Workflow-driven data analysis and machine learning agent plugin for Claude Code.",
+  "author": {
+    "name": "Shayan Shams"
+  }
+}

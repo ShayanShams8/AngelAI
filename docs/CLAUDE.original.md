@@ -1,3 +1,5 @@
+**Deprecated: This document has been superseded by the skill-based plugin architecture.**
+
 # Agent Instructions
 
 You're working inside the **WAT framework** (Workflows, Agents, Tools). This architecture separates concerns so that probabilistic AI handles reasoning while deterministic code handles execution. That separation is what makes this system reliable.

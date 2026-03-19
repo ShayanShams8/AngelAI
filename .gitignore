@@ -1,6 +1,10 @@
-.local/
 .env
-!.tmp/
+.env.angel
 __pycache__/
 *.pyc
 .vscode/
+system_info.txt
+RESULTS/
+tmp/
+token.json
+credentials.json
