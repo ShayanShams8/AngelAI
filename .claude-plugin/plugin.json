@@ -1,8 +1,13 @@
 {
   "name": "angel-ai",
-  "version": "0.1.0",
-  "description": "Workflow-driven data analysis and machine learning agent plugin for Claude Code.",
+  "description": "Agentic data analysis and machine learning plugin for Claude Code. Runs full ML workflows, trains models, and delivers PDF reports from your business data.",
+  "version": "1.0.0",
   "author": {
-    "name": "Shayan Shams"
-  }
+    "name": "Shayan Shams",
+    "email": "shayanshams.dev@gmail.com"
+  },
+  "repository": "https://github.com/ShayanShams8/AngelAI.git",
+  "license": "Custom",
+  "keywords": ["data-analysis", "machine-learning", "ml", "reporting", "pdf", "shopify", "quickbooks", "square"],
+  "skills": "./skills/"
 }
